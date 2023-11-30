@@ -24,7 +24,7 @@ export default {
     extend: {
       backgroundImage: {
         // parallax: 'url("src/assets/replace/stock-closeup-mtn-bg.jpg")',
-        parallax: 'url("src/assets/photos/white-vine-row.jpg")',
+        parallax: 'url("public/white-vine-row.jpg")',
       },
       boxShadow: {
         instagram: "20px 12px #009DDC",
