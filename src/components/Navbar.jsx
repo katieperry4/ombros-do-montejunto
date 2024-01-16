@@ -47,6 +47,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={toggleNavbar}
+              aria-label="navigation button"
               className="text-white focus:outline-none"
             >
               <svg
