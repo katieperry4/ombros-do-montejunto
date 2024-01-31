@@ -32,6 +32,8 @@ const Posts = () => {
                     width: "80vw",
                     autoplay: true,
                     pagination: false,
+                    speed: 3000,
+                    interval: 4000,
                   }}
                 >
                   {imageFileArray.map((image) => {
