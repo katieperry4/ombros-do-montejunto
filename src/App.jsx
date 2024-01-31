@@ -1,4 +1,5 @@
 import "./App.css";
+import "@splidejs/react-splide/css";
 import {
   About,
   Home,

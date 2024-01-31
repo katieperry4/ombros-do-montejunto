@@ -14,15 +14,20 @@ export const useFetchPosts = () => {
   const getPosts = async () => {
     try {
       const response = await client.getEntries({
-        content_type: "wineTest",
+        content_type: "ombrosBlog",
       });
-      console.log(response);
       const posts = response.items.map((content) => {
-        const { title, date, post } = content.fields;
+        const title = content.fields.entryTitle;
+        const post = content.fields.blogContent.content;
+        const date = content.fields.date;
+        const headerImagesObject = content.fields.photos;
         const id = content.sys.id;
-        const desc = content?.fields?.image?.fields?.description;
-        const img = content?.fields?.image?.fields?.file?.url;
-        return { title, date, post, id, img, desc };
+        const imageFileArray = [];
+        headerImagesObject.forEach(function (image) {
+          const file = image.fields.file.url;
+          imageFileArray.push(file);
+        });
+        return { title, date, post, imageFileArray, id };
       });
       setPosts(posts);
       setLoading(false);

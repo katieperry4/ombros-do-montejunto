@@ -8,6 +8,7 @@ export default {
       "light-green": "#85CB33",
       "dark-blue": "#009DDC",
       "light-blue": "#56CBF9",
+      "blog-bg": "#D8F1DF",
       black: "#000000",
       white: "#ffffff",
     },
