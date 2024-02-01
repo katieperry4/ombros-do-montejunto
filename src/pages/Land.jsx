@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
 import { Banner } from "../components";
+import frades from "../assets/photos/frades.webp";
+import carvalhal from "../assets/photos/carvalhal.webp";
+import loureiro from "../assets/photos/loureiro.webp";
 
 const Land = () => {
   return (
     <>
       <Banner />
       <div className="page-div">
-        <div className="pb-4 flex flex-col items-center md:mx-18 lg:mx-32 xl:mx-96">
+        <div className="pb-4 flex flex-col items-center md:mx-18 lg:mx-32 xl:mx-72">
           <h1 className="font-serif text-5xl p-4">The Land</h1>
           <div className="bg-dark-green p-12 rounded w-2/3 m-12 flex items-center justify-center">
             <h2 className="italic text-white">
@@ -30,14 +33,20 @@ const Land = () => {
               Loureiro, Oliviera, and Carvalhal.
             </p>
             <br />
-            <div>
+            <div className="land-container">
               <p>
-                <strong>Frades:</strong>
+                <strong className="text-2xl">Frades:</strong>
                 <br></br>Named after the “Fryers cowl” plant which grows in
                 abundance under the vines every year in early winter to mid
                 spring.
                 <br />
-                (Insert Pic, Harry to take)
+                <div className="flex justify-center my-8">
+                  <img
+                    src={frades}
+                    alt="An image of the Frades vineyard"
+                    className="rounded w-3/4"
+                  />
+                </div>
                 <br />
                 On the North facing slopes of Montejunto, it is comprised: of
                 fernão pires, an aromatic white grape known for it’s high sugar
@@ -55,12 +64,18 @@ const Land = () => {
               </p>
             </div>
             <br />
-            <div>
+            <div className="land-container">
               <p>
-                <strong>Loureiro:</strong>
+                <strong className="text-2xl">Loureiro:</strong>
                 <br></br>Named after the Laurel bushes that border the vineyard.
                 <br />
-                (Insert Pic)
+                <div className="flex justify-center my-8">
+                  <img
+                    src={loureiro}
+                    alt="An image of the Loureiro vineyard"
+                    className="rounded w-3/4"
+                  />
+                </div>
                 <br />
                 This vineyard is East facing on the side of the hill at the
                 entrance to Avenal from Vilar. It is comprised of mostly Syrah
@@ -79,13 +94,19 @@ const Land = () => {
               </p>
             </div>
             <br />
-            <div>
+            <div className="land-container">
               <p>
-                <strong>Oliveira:</strong>
+                <strong className="text-2xl">Oliveira:</strong>
                 <br></br>Named after the Olive grove situated next to the
                 vineyard.
                 <br />
-                (Insert Pic)
+                <div className="flex justify-center my-8">
+                  <img
+                    src={frades}
+                    alt="An image of the Olivera vineyard"
+                    className="rounded w-3/4"
+                  />
+                </div>
                 <br />
                 Significantly flatter than the other vineyards on this list,
                 Oliveira is comprised of mostly Syrah, with a few rows of
@@ -102,13 +123,19 @@ const Land = () => {
               </p>
             </div>
             <br />
-            <div>
+            <div className="land-container">
               <p>
-                <strong>Carvalhal:</strong>
+                <strong className="text-2xl">Carvalhal:</strong>
                 <br></br>Named after the Oak-bush forest situated at the peak of
                 the hill above the vineyard.
                 <br />
-                (Insert Pic)
+                <div className="flex justify-center my-8">
+                  <img
+                    src={carvalhal}
+                    alt="An image of the Carvalhal vineyard"
+                    className="rounded w-3/4"
+                  />
+                </div>
                 <br />
                 Steep, South facing and sheltered from the wind by forests and
                 mountains. The three most important characteristics of a typical
