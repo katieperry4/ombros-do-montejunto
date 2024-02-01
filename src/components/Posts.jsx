@@ -34,6 +34,8 @@ const Posts = () => {
                     pagination: false,
                     speed: 3000,
                     interval: 4000,
+                    pauseOnHover: true,
+                    pauseOnFocus: true,
                   }}
                 >
                   {imageFileArray.map((image) => {
@@ -67,7 +69,11 @@ const Posts = () => {
                     }
                     if (nodeType == "paragraph") {
                       let pContent = content.content[0].value;
-                      return <p key={pContent}>{pContent}</p>;
+                      if (pContent == "") {
+                        return <hr key={pContent} className="opacity-0"></hr>;
+                      } else {
+                        return <p key={pContent}>{pContent}</p>;
+                      }
                     }
                     if (/^heading-[1-8]$/.test(nodeType)) {
                       let nodeTypeArray = Array.from(nodeType);
