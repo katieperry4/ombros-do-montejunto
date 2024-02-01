@@ -28,8 +28,7 @@ const Posts = () => {
                   options={{
                     gap: "1rem",
                     type: "loop",
-                    heightRatio: 0.6,
-                    width: "80vw",
+                    width: "50vw",
                     autoplay: true,
                     pagination: false,
                     speed: 3000,
