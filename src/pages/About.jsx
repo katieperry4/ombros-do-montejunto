@@ -1,6 +1,7 @@
 import { Banner } from "../components/";
 import roy from "../assets/people/roy.jpg";
 import diana from "../assets/people/diana.jpg";
+import harry from "../assets/people/harry.jpg";
 const About = () => {
   return (
     <>
@@ -29,10 +30,20 @@ const About = () => {
             <div className="flex flex-col items-center p-4">
               <img
                 className="w-32 lg:w-64 rounded-full"
+                src={harry}
+                alt="Harry Kirby"
+              />
+              <h4 className="text-2xl py-4">Harry</h4>
+              <p>Winemaker</p>
+            </div>
+            <div className="flex flex-col items-center p-4">
+              <img
+                className="w-32 lg:w-64 rounded-full"
                 src={roy}
                 alt="Roy Kirby"
               />
               <h4 className="text-2xl py-4">Roy</h4>
+              <p>Job title</p>
             </div>
             <div className="flex flex-col items-center p-4">
               <img
@@ -41,6 +52,7 @@ const About = () => {
                 alt="Diana Kirby"
               />
               <h4 className="text-2xl py-4">Diana</h4>
+              <p>Job title</p>
             </div>
           </div>
         </div>
@@ -50,11 +62,3 @@ const About = () => {
 };
 
 export default About;
-
-// Image
-// story
-// => about the company
-// => UVP
-//Meet the team
-// => people
-// => family run
