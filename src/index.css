@@ -20,6 +20,14 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+}
+
 .gradient {
   position: fixed;
   top: 0;
@@ -122,4 +130,9 @@ label span {
 .land-container {
   margin-top: 4rem;
   margin-bottom: 2rem;
+}
+
+hr {
+  opacity: 0;
+  margin-top: 1rem;
 }

@@ -10,22 +10,56 @@ const Winery = () => {
     <>
       <Banner />
       {/* intro */}
-      <div className="pb-4 flex flex-col items-center md:mx-18 lg:mx-32 xl:mx-96">
-        <h1 className="font-serif text-5xl p-4">Our Winery</h1>
-        <p className="px-4 lg:px-12 xl:px-24">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugiat
-          voluptas culpa mollitia totam tenetur quas perferendis, itaque minus
-          at dolores, sint doloremque suscipit facere alias autem soluta
-          voluptates explicabo! Iure laborum culpa modi architecto mollitia
-          voluptate quaerat tempora accusantium exercitationem soluta enim
-          dolorem molestias consequatur tenetur hic repudiandae dicta, ducimus
-          itaque ad corporis esse? Eos sequi cum tempore esse.
-        </p>
+      <div className="pb-4 flex flex-col items-center mx-6 md:mx-18 lg:mx-32 xl:mx-72">
+        <h1 className="font-serif text-5xl p-4 mb-4">Our Winery</h1>
+        <h2 className="italic">photo of winery or plans</h2>
+        <div>
+          <p className="px-4 lg:px-12 xl:px-24">
+            Situated in the village of Avenal close by the vineyards the winery
+            looks out through the valley mouth towards the Atlantic Ocean.
+          </p>
+          <hr />
+          <p className="px-4 lg:px-12 xl:px-24">
+            Built over 2 years between 2024 and 2026 it is modern with the
+            emphasis on continuing the focus of technical excellence started in
+            the vineyards.
+          </p>
+          <hr />
+          <p className="px-4 lg:px-12 xl:px-24">
+            The total area is 450 sqM which is divided into a shop, laboratory
+            and office space, workers facilities, cellar, wine making and
+            agricultural equipment spaces. Designed by local architects and
+            built by local builders the winery also offers other local wine
+            growers the opportunity to explore the full potential for their
+            wines by offering low-cost contract wine making services.
+          </p>
+          <hr />
+          <p className="px-4 lg:px-12 xl:px-24">
+            The focus of the design is on technical excellence, minimal
+            environmental impact, and workers safety and wellbeing.
+          </p>
+          <hr />
+          <p className="px-4 lg:px-12 xl:px-24">
+            On arrival at the winery from the vineyard the grapes go onto the
+            sorting table before passing on to the destemmer and for the whites
+            the wine press. The target is to have less than 8 hours between
+            picking and the filling of the fermentation tanks. Fermentation is
+            carried out in either 3,000 or 3,500 litre temperature controlled
+            stainless steel tanks. Ageing, depending on the wines takes place
+            either in stainless steel tanks or oak barrels or bottles.
+          </p>
+          <hr />
+          <p className="px-4 lg:px-12 xl:px-24">
+            Lovers of wines where volatile acidity or bretnomyces are used to
+            introduce character, complexity or “typicity” (tipicidade or
+            tipicité) should look elsewhere for their wines.
+          </p>
+        </div>
       </div>
       {/* winery photos */}
       <div className="flex items-center justify-center">
         <img
-          className="w-1/2 rounded-xl"
+          className="w-1/3 rounded-xl"
           src={glassesPhoto}
           alt="Two red wine glasses"
         />

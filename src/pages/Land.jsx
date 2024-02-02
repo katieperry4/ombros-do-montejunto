@@ -12,7 +12,7 @@ const Land = () => {
         <div className="pb-4 flex flex-col items-center md:mx-18 lg:mx-32 xl:mx-72">
           <h1 className="font-serif text-5xl p-4">The Land</h1>
           <div className="bg-dark-green p-12 rounded w-2/3 m-12 flex items-center justify-center">
-            <h2 className="italic text-white">
+            <h2 className="italic text-white text-xl">
               “There’s something about that little circle of mountain, I drive
               there every morning and once you squeeze your way around the foot
               of the mountain, it’s like everything just goes quiet. The world
