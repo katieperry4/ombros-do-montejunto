@@ -17,11 +17,14 @@ const Posts = () => {
         <h1 className="font-serif text-5xl p-4">Progress Blog</h1>
         <p className="m-2 text-lg">follow along as we build our winery etc.</p>
       </div>
-      <div className="bg-blog-bg pt-12 rounded">
+      <div>
         {posts.map((content) => {
           const { title, date, post, imageFileArray, id } = content;
           return (
-            <article key={id} className="mb-24 mx-6 xl:mx-64 lg:mx-32">
+            <article
+              key={id}
+              className="mb-24 mx-6 xl:mx-64 lg:mx-32 bg-blog-bg px-12 py-12 rounded"
+            >
               <div className="xl:flex xl:flex-col xl:items-center">
                 <Splide
                   className="slideshow-container"

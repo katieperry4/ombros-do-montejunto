@@ -2,7 +2,8 @@ import { createClient } from "contentful";
 import { useEffect, useState } from "react";
 
 const client = createClient({
-  space: "1wt13v6p9g75",
+  // space: "1wt13v6p9g75",
+  space: "blftkadgaae2",
   environment: "master",
   accessToken: import.meta.env.VITE_API_KEY,
 });
@@ -17,10 +18,10 @@ export const useFetchPosts = () => {
         content_type: "ombrosBlog",
       });
       const posts = response.items.map((content) => {
-        const title = content.fields.entryTitle;
-        const post = content.fields.blogContent.content;
+        const title = content.fields.postTitle;
+        const post = content.fields.postContent.content;
         const date = content.fields.date;
-        const headerImagesObject = content.fields.photos;
+        const headerImagesObject = content.fields.photoSlideshow;
         const id = content.sys.id;
         const imageFileArray = [];
         headerImagesObject.forEach(function (image) {
