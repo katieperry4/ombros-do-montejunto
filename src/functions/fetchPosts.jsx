@@ -16,6 +16,7 @@ export const useFetchPosts = () => {
     try {
       const response = await client.getEntries({
         content_type: "ombrosBlog",
+        order: "-fields.date",
       });
       const posts = response.items.map((content) => {
         const title = content.fields.postTitle;
