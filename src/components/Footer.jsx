@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import mapImg from "../assets/replace/map.png";
+// import mapImg from "../assets/replace/map.png";
 
 const Footer = () => {
   return (
@@ -7,9 +7,9 @@ const Footer = () => {
       {/* main container */}
       <div className="h-2/5 p-4 lg:h-96 bg-dark-green mt-16 flex flex-col md:flex-row items-center px-24 justify-evenly">
         {/* map */}
-        <div className="w-96 ">
+        {/* <div className="w-96 ">
           <img src={mapImg} alt="image to replace for map iFrame" />
-        </div>
+        </div> */}
         {/* contact */}
         <div className="px-6">
           <ul>

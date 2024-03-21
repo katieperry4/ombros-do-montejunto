@@ -8,21 +8,23 @@ const client = createClient({
   accessToken: import.meta.env.VITE_API_KEY,
 });
 
-export const useFetchPosts = () => {
+export const useFetchTweets = () => {
   const [loading, setLoading] = useState(true);
-  const [posts, setPosts] = useState([]);
+  const [tweets, setTweets] = useState([]);
 
-  const getPosts = async () => {
+  const getTweets = async () => {
     try {
       const response = await client.getEntries({
-        content_type: "ombrosBlog",
+        content_type: "winemakerBlog",
         order: "-fields.date",
       });
-      const posts = response.items.map((content) => {
-        const title = content.fields.postTitle;
-        const post = content.fields.postContent.content;
+      console.log(response);
+      const tweets = response.items.map((content) => {
+        console.log(content.fields.date);
+        console.log(content.fields.tweet);
+        const tweet = content.fields.tweet;
         const date = content.fields.date;
-        const headerImagesObject = content.fields.photoSlideshow;
+        const headerImagesObject = content.fields.photos;
         const id = content.sys.id;
         const imageFileArray = [];
         headerImagesObject.forEach(function (image) {
@@ -30,9 +32,9 @@ export const useFetchPosts = () => {
           imageFileArray.push(file);
         });
         console.log(imageFileArray);
-        return { title, date, post, imageFileArray, id };
+        return { tweet, date, imageFileArray, id };
       });
-      setPosts(posts);
+      setTweets(tweets);
       setLoading(false);
     } catch (error) {
       setLoading(false);
@@ -40,7 +42,7 @@ export const useFetchPosts = () => {
     }
   };
   useEffect(() => {
-    getPosts();
+    getTweets();
   }, []);
-  return { loading, posts };
+  return { loading, tweets };
 };

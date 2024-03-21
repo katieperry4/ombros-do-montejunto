@@ -21,7 +21,7 @@ const About = () => {
         </div>
         <div className="bg-dark-green p-12 rounded w-2/3 m-12 flex items-center justify-center">
           <h2 className="italic text-white">
-            This is a statement on why we're so awesome
+            This is a statement on why we&apos;re so awesome
           </h2>
         </div>
         <div className="flex flex-col items-center">

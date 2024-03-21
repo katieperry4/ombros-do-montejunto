@@ -7,5 +7,19 @@ import Winery from "./Winery";
 import Wines from "./Wines";
 import Error from "./Error";
 import Land from "./Land";
+import Tweets from "./Tweets";
+import Blog from "./Blog";
 
-export { About, Home, News, Contact, Winery, Wines, Product, Error, Land };
+export {
+  About,
+  Home,
+  News,
+  Contact,
+  Winery,
+  Wines,
+  Product,
+  Error,
+  Land,
+  Tweets,
+  Blog,
+};

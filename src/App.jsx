@@ -10,6 +10,8 @@ import {
   Product,
   Error,
   Land,
+  Blog,
+  Tweets,
 } from "./pages";
 import { Footer, Navbar } from "./components/index";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -23,6 +25,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/land" element={<Land />} />
           <Route path="/news" element={<News />} />
+          <Route path="/news/blog" element={<Blog />} />
+          <Route path="/news/winemaker-blog" element={<Tweets />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/winery" element={<Winery />} />
           <Route path="/wines" element={<Wines />} />
