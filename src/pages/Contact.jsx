@@ -31,9 +31,9 @@ const Contact = () => {
               <li className="">444-444-444</li>
               <li
                 className=" underline"
-                onClick={() => (window.location = "mailto:email@email.com")}
+                onClick={() => (window.location = "mailto:hello@ombrosdm.com")}
               >
-                email@email.com
+                hello@ombrosdm.com
               </li>
               <li className="footer-li">Social Icons</li>
             </ul>

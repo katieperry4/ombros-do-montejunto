@@ -5,5 +5,6 @@ import Banner from "./Banner";
 import Email from "./Email";
 import Posts from "./Posts";
 import Instagram from "./Instagram";
+import Tweets from "./Winemaker";
 
-export { Footer, Navbar, Sidebar, Banner, Email, Posts, Instagram };
+export { Footer, Navbar, Sidebar, Banner, Email, Posts, Instagram, Tweets };
